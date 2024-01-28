@@ -49,4 +49,14 @@
     <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/e44f4b13-846c-410a-87d0-41f382e29139"></td>
     <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/6332fbe2-2be4-495e-9b7c-aea4a9328f65"></td>
   </tr>
+  <tr>
+    <th>Date format 16</th>
+    <th>Date format 17</th>
+    <th>Date format 18</th>
+  </tr>
+  <tr>
+   <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/8406acc6-1211-4f6a-8eed-af97b19a5354"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/ee554fe9-df84-415d-8ddd-f3fe7e0d39fc"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/29235ad1-ca93-4c69-8eba-338a142458d5"></td>
+  </tr>
 </table>
