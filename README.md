@@ -1,3 +1,4 @@
+# Date Format
 <table style="width:100%">
   <tr>
     <th>Date format 1</th>
@@ -70,3 +71,60 @@
     <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/ec3adce2-bab0-4e07-9649-8d6091a79894"></td>
   </tr>
 </table>
+
+# Time Format
+<table style="width:100%">
+  <tr>
+    <th>Date format 1</th>
+    <th>Date format 2</th>
+    <th>Date format 3</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/52a5b02e-f2bc-4ae0-b073-367e124697f4"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/c9cd3945-ad74-4032-932f-de5bd1e99784"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/47a1fd30-4789-4a09-985f-c3440404ec86"></td>
+  </tr>
+  <tr>
+    <th>Date format 4</th>
+    <th>Date format 5</th>
+    <th>Date format 6</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/98e6ddd1-a8a4-4e9b-809b-114ff273b5f8"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/083c4b97-8c0b-4fc0-9752-8e842b135384"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/f8755ab9-c405-4b57-bbcf-087c1033db85"></td>
+  </tr>
+  <tr>
+    <th>Date format 7</th>
+    <th>Date format 8</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/161e9fdf-4b4c-4c37-b13e-38107082c162"></td>
+    <td><img src="https://github.com/MdAshrafUllah/Flutter-Date-and-Time-Format/assets/96839511/b8ef785e-f682-4209-8393-75bd5918b9b0"></td>
+  </tr>
+</table>
+
+## For use time you have to create statefull widget. .
+
+- Add This Line
+
+  ```dart
+  late String formattedDateTime;
+
+  @override
+  void initState() {
+    super.initState();
+    // Call a function to update the time initially
+    _updateTime();
+    // Set up a timer to update the time every second
+    Timer.periodic(const Duration(seconds: 1), (Timer timer) {
+      _updateTime();
+    });
+  }
+
+  void _updateTime() {
+    setState(() {
+      // Assuming function to get the current time
+      formattedDateTime = currentTimeFormat();
+    });
+  }
